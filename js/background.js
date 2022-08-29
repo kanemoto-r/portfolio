@@ -16,7 +16,7 @@ particlesJS("particles-js", {
         "width": 0,
       },
       "image": {
-        "src": "/images/flower.png",//【重要】画像を指定！桜の画像を設定してください。
+        "src": "images/flower.png",//【重要】画像を指定！桜の画像を設定してください。
         "width": 120,
         "height": 120
       }
