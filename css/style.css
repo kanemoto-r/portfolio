@@ -1,0 +1,130 @@
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  color: #333;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+/* background js 用 */
+html,
+body {
+  height: 100%;
+  /*高さを100%にして描画エリアをとる*/
+}
+
+#particles-js {
+  position: fixed;
+  /*描画固定*/
+  z-index: -1;
+  /*描画を一番下に*/
+  width: 100%;
+  height: 100%;
+  background-color: #FEE7E7;
+  /*背景色*/
+}
+
+#wrapper {
+  position: relative;
+  /*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+  z-index: 1;
+  /*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+  width: 100%;
+  height: 100%;
+}
+
+/* background js 用ここまで */
+header,
+footer {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer small {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+main img {
+  width: 90%;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.sites {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+article {
+  width: 25%;
+}
+
+.git-site,
+.git-code,
+.pdf {
+  border: 1px solid #333;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.git-site a,
+.git-code a,
+.pdf a {
+  display: block;
+  padding: 20px;
+}
+
+.text {
+  width: 100%;
+  padding: 10px 15px;
+  text-align: justify;
+}
+
+@media screen and (max-width:1113px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:997px) {
+  h3 {
+    font-size: 25px;
+  }
+
+  .sites {
+    flex-direction: column;
+  }
+
+  article {
+    width: 50%;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width:997px) {
+  h3 {
+    font-size: 20px;
+  }
+
+  article {
+    width: 80%;
+  }
+}
