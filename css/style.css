@@ -23,7 +23,6 @@ body {
   /*背景色*/
   background: rgb(255, 255, 255);
   background: linear-gradient(67deg, rgba(255, 255, 255, 1) 0%, rgba(254, 231, 231, 1) 100%);
-
 }
 
 #wrapper {
@@ -51,7 +50,7 @@ footer small {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 main {
@@ -86,6 +85,12 @@ article {
   border: 1px solid #333;
   border-radius: 3px;
   margin: 10px;
+}
+
+.git-site:hover,
+.git-code:hover,
+.pdf:hover {
+  opacity: 0.7;
 }
 
 .git-site a,
